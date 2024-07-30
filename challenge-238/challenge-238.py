@@ -46,6 +46,30 @@ class Solution:
 
     #     return product_list
 
+    # Attempted Solution 3 - Time Exceeded
+    # class Solution:
+    # def productExceptSelf(self, nums: List[int]) -> List[int]:
+    #     product = []
+        
+    #     for i in range(len(nums)):
+    #         right_product = 1
+    #         left_product = 1
+    #         temp_product = 1
+
+    #         # calculate right side product
+    #         for j in range(i + 1, len(nums)):
+    #             right_product *= nums[j]
+
+    #         if i > 0:
+    #             # calculate left side product
+    #             for k in range(0, i):
+    #                 left_product *= nums[k]
+            
+    #         temp_product = left_product * right_product
+    #         product.append(temp_product)
+        
+    #     return product
+
     # Actual Solution
     """
     [-1, 1, 0, -3, 3]
